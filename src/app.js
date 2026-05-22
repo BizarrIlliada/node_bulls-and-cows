@@ -22,13 +22,13 @@ function play() {
         return;
       }
 
-      const result = getBullsAndCows(userInput, numberToGuess);
+      const result = getBullsAndCows(Number(userInput), numberToGuess);
 
       console.log(result);
 
       if (result.bulls === 4) {
         console.log('Congratulations!!!');
-        console.log('The number is ' + userInput);
+        console.log('The number is ' + numberToGuess);
         terminal.close();
 
         return;
